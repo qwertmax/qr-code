@@ -4,7 +4,8 @@
   "description": "QR Code Generator",
   "main": "index.js",
   "dependencies": {
-    "element-ui": "^2.4.9"
+    "element-ui": "^2.4.9",
+    "vue": "^2.5.17"
   },
   "devDependencies": {},
   "scripts": {
@@ -14,10 +15,10 @@
     "type": "git",
     "url": "git+ssh://git@gitlab.com/qwertmax/qr-code.git"
   },
-  "author": "",
+  "author": "Maxim Tishchenko",
   "license": "MIT",
   "bugs": {
     "url": "https://gitlab.com/qwertmax/qr-code/issues"
   },
-  "homepage": "https://gitlab.com/qwertmax/qr-code#readme"
+  "homepage": "https://www.qwertmax.ru/qr-code-generator"
 }
