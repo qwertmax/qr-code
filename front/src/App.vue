@@ -2,18 +2,19 @@
   <div id="app">
     <div>
       <main-menu></main-menu>
+      <qr-code></qr-code>
       <router-view/>
-      <qrcode></qrcode>
     </div>
   </div>
 </template>
 
 <script>
 import MainMenu from './components/MainMenu'
+import QrCode from './components/QrCode'
 
 export default {
   name: 'App',
-  components: { MainMenu }
+  components: { MainMenu, QrCode }
 }
 </script>
 
@@ -27,3 +28,5 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+// vetur
