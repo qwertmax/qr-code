@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -11,5 +16,5 @@ body {
   border-radius: 0;
 }
 .el-footer {
-  box-shadow: 0 -3px 10px 0 rgba(0,0,0,.0785)
+  box-shadow: 0 -3px 10px 0 rgba(0,0,0,.0785);
 }
