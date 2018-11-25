@@ -1,6 +1,7 @@
 <template>
   <div>
-    <img v-bind:src="image" />
+    <img v-bind:src="image" v-if="is_set_qr_code"/>
+    <img src="../assets/no_data.png" v-else />
   </div>
 </template>
 
@@ -23,6 +24,13 @@ export default {
         .catch(err => {
           console.error(err)
         })
+    },
+    is_set_qr_code: function () {
+      if (this.image.length > 0) {
+        return true
+      } else {
+        return false
+      }
     },
     // makeQRCode: async function (text) {
     //   if (text.length === 0) {

@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <div>
-      <main-menu></main-menu>
-      <qr-code></qr-code>
-      <router-view/>
-    </div>
+    <el-row>
+      <el-col :span="3" :offset="3" class="menu"><main-menu></main-menu></el-col>
+      <el-col :span="8" class="forms"><router-view/></el-col>
+      <el-col :span="6" class="qr-code"><qr-code></qr-code></el-col>
+    </el-row>
   </div>
 </template>
 
@@ -17,7 +17,6 @@ export default {
   components: { MainMenu, QrCode }
 }
 </script>
-
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -25,8 +24,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.el-col {
+  background: #ecf5ff;
+  border: 1px solid #b3d8ff;
+}
+.forms {
+  background: #f0f9eb;
+  border: 1px solid #c2e7b0;
+  padding: 10px;
+}
+.qr-code {
+  background: #fef0f0;
+  border: 1px solid #fbc4c4;
 }
 </style>
-
-// vetur

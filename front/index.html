@@ -6,9 +6,17 @@
     <title>QR Code Generator</title>
   </head>
   <body>
-    <div id="app">
-    </div>
-
+    <el-container>
+      <el-header>
+        QR Code Generator
+      </el-header>
+      <el-main><div id="app"></div></el-main>
+      <el-footer>
+        <el-row :gutter="20">
+          <el-col :span="12" :offset="6"><div class="grid-content bg-purple">Copyright © 2018 Burning Buttons, LLC. All rights reserved.</div></el-col>
+        </el-row>
+      </el-footer>
+    </el-container>
     <!-- built files will be auto injected -->
   </body>
 </html>

@@ -1,8 +1,8 @@
 <template>
   <form>
-    <span><input type="text" name="description" placeholder="Description"></span>
-    <span><input type="text" name="from" placeholder="From"></span>
-    <span><input type="text" name="to" placeholder="To"></span>
+    <span><el-input type="text" name="description" placeholder="Description"></el-input></span>
+    <span><el-input type="text" name="from" placeholder="From"></el-input></span>
+    <span><el-input type="text" name="to" placeholder="To"></el-input></span>
     <select name="timezone">
       <option value="+720">GMT -12:00</option>
       <option value="+660">GMT -11:00</option>

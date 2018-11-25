@@ -1,33 +1,33 @@
 <template>
-  <form>
-    <div>
-      <span><input type="text" placeholder="First name" @change="changeVal" v-model="first_name"></span>
-      <span><input type="text" placeholder="Company/Organisation" @change="changeVal" v-model="company"></span>
-    </div>
-    <div>
-      <span><input type="text" placeholder="Last name" @change="changeVal" v-model="last_name"></span>
-      <span><input type="text" placeholder="Email (personal)" @change="changeVal" v-model="email_personal"></span>
-    </div>
-    <div>
-      <span><input type="text" placeholder="Title" @change="changeVal" v-model="title"></span>
-      <span><input type="text" placeholder="Email (business)" @change="changeVal" v-model="email_business"></span>
-    </div>
-    <div>
-      <span><input type="text" placeholder="Street" @change="changeVal" v-model="street"></span>
-      <span><input type="text" placeholder="Phone (personal)" @change="changeVal" v-model="phone_personal"></span>
-    </div>
-    <div>
-      <span><input type="text" placeholder="Zip code" @change="changeVal" v-model="zip_code"></span>
-      <span><input type="text" placeholder="Phone (mobile)" @change="changeVal" v-model="phone_mobile"></span>
-    </div>
-    <div>
-      <span><input type="text" placeholder="City" @change="changeVal" v-model="city"></span>
-      <span><input type="text" placeholder="Phone (business)" @change="changeVal" v-model="phone_business"></span>
-    </div>
-    <div>
-      <span><input type="text" placeholder="Country" @change="changeVal" v-model="country"></span>
-      <span><input type="text" placeholder="Website" @change="changeVal" v-model="website"></span>
-    </div>
+  <form class="vcard">
+    <el-row>
+      <el-input type="text" placeholder="First name" @change="changeVal" v-model="first_name"></el-input>
+      <el-input type="text" placeholder="Company/Organisation" @change="changeVal" v-model="company"></el-input>
+    </el-row>
+    <el-row>
+      <el-input type="text" placeholder="Last name" @change="changeVal" v-model="last_name"></el-input>
+      <el-input type="text" placeholder="Email (personal)" @change="changeVal" v-model="email_personal"></el-input>
+    </el-row>
+    <el-row>
+      <el-input type="text" placeholder="Title" @change="changeVal" v-model="title"></el-input>
+      <el-input type="text" placeholder="Email (business)" @change="changeVal" v-model="email_business"></el-input>
+    </el-row>
+    <el-row>
+      <el-input type="text" placeholder="Street" @change="changeVal" v-model="street"></el-input>
+      <el-input type="text" placeholder="Phone (personal)" @change="changeVal" v-model="phone_personal"></el-input>
+    </el-row>
+    <el-row>
+      <el-input type="text" placeholder="Zip code" @change="changeVal" v-model="zip_code"></el-input>
+      <el-input type="text" placeholder="Phone (mobile)" @change="changeVal" v-model="phone_mobile"></el-input>
+    </el-row>
+    <el-row>
+      <el-input type="text" placeholder="City" @change="changeVal" v-model="city"></el-input>
+      <el-input type="text" placeholder="Phone (business)" @change="changeVal" v-model="phone_business"></el-input>
+    </el-row>
+    <el-row>
+      <el-input type="text" placeholder="Country" @change="changeVal" v-model="country"></el-input>
+      <el-input type="text" placeholder="Website" @change="changeVal" v-model="website"></el-input>
+    </el-row>
   </form>
 </template>
 
@@ -137,3 +137,9 @@ export default {
   }
 }
 </script>
+<style>
+.vcard .el-input {
+  width: 40%;
+  padding: 5px 10px;
+}
+</style>

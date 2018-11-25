@@ -1,17 +1,19 @@
 <template>
   <form>
-    <span><input type="text" value="url" placeholder="https://" @change="changeVal"></span>
+    <span><el-input type="text" placeholder="https://" v-model="url" @change="changeVal"></el-input></span>
   </form>
 </template>
 
 <script>
 export default {
-  props: {
-    url: String
+  data () {
+    return {
+      url: ''
+    }
   },
   methods: {
     changeVal: function (e) {
-      this.$bus.$emit('makeQREvent', e.target.value)
+      this.$bus.$emit('makeQREvent', this.url)
     }
   }
 }

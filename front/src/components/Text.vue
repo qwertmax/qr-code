@@ -1,14 +1,19 @@
 <template>
   <form>
-    <span><input type="text" name="text" placeholder="Text" @change="changeVal" /></span>
+    <el-input type="textarea"   :autosize="{ minRows: 2, maxRows: 8}" placeholder="Text" @change="changeVal"></el-input>
   </form>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      text: ''
+    }
+  },
   methods: {
     changeVal: function (e) {
-      this.$bus.$emit('makeQREvent', e.target.value)
+      this.$bus.$emit('makeQREvent', this.text)
     }
   }
 }
