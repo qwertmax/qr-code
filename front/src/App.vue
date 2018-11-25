@@ -1,11 +1,21 @@
 <template>
-  <div id="app">
-    <el-row>
-      <el-col :span="3" :offset="3" class="menu"><main-menu></main-menu></el-col>
-      <el-col :span="8" class="forms"><router-view/></el-col>
-      <el-col :span="6" class="qr-code"><qr-code></qr-code></el-col>
-    </el-row>
-  </div>
+  <el-container>
+    <el-header>
+      QR Code Generator
+    </el-header>
+    <el-main id="app">
+      <el-row>
+        <el-col :span="3" :offset="3" class="menu"><main-menu></main-menu></el-col>
+        <el-col :span="8" class="forms"><router-view/></el-col>
+        <el-col :span="6" class="qr-code"><qr-code></qr-code></el-col>
+      </el-row>
+    </el-main>
+    <el-footer>
+      <el-row :gutter="20">
+        <el-col :span="12" :offset="6"><div class="grid-content bg-purple">Copyright © 2018 Burning Buttons, LLC. All rights reserved.</div></el-col>
+      </el-row>
+    </el-footer>
+  </el-container>
 </template>
 
 <script>

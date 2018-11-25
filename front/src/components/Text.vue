@@ -1,6 +1,6 @@
 <template>
   <form>
-    <el-input type="textarea"   :autosize="{ minRows: 2, maxRows: 8}" placeholder="Text" @change="changeVal"></el-input>
+    <el-input type="textarea" :autosize="{ minRows: 2, maxRows: 8}" placeholder="Text" @change="changeVal" v-model="text"></el-input>
   </form>
 </template>
 
