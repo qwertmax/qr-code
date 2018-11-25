@@ -33,5 +33,28 @@
 
 <script>
 export default {
+  data () {
+    return {
+      first_name: '',
+      last_name: '',
+      company: '',
+      email_personal: '',
+      email_business: '',
+      title: '',
+      street: '',
+      phone_personal: '',
+      phone_business: '',
+      phone_mobile: '',
+      zip_code: '',
+      city: '',
+      country: '',
+      website: ''
+    }
+  },
+  methods: {
+    changeVal: function (e) {
+      this.$bus.$emit('makeQREvent', e.target.value)
+    }
+  }
 }
 </script>
