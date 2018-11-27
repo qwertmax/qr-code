@@ -11,7 +11,7 @@
         <el-col :span="8"><h3>2. Content</h3></el-col>
         <el-col :span="6"><h3>3. Live Preview</h3></el-col>
       </el-row>
-      <el-row>
+      <el-row class="main-col">
         <el-col :span="3" :offset="3" class="menu">
           <main-menu></main-menu>
         </el-col>
@@ -55,7 +55,12 @@ export default {
 .el-main .types .el-col h3 {
   margin: 15px 0;
 }
+.main-col {
+  display: flex;
+}
 .el-main .el-col {
+}
+.el-main .menu {
   background: #ecf5ff;
   border: 1px solid #b3d8ff;
 }
